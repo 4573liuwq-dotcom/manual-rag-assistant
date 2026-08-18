@@ -1,0 +1,8 @@
+{
+  "case_count": 8,
+  "success_count": 8,
+  "key_fact_recall": 0.8334,
+  "valid_citation_rate": 1.0,
+  "answer_pass_rate": 0.5,
+  "avg_generation_latency_ms": 3052.66
+}

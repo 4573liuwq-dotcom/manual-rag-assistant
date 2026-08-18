@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440">
+  <rect width="720" height="440" rx="28" fill="#edf3ef"/>
+  <g fill="none" stroke="#176b51" stroke-width="10">
+    <ellipse cx="360" cy="155" rx="170" ry="58" fill="#dcebe4"/>
+    <path d="M190 155v130c0 32 76 58 170 58s170-26 170-58V155" fill="#e6f1ec"/>
+    <path d="M190 220c0 32 76 58 170 58s170-26 170-58"/>
+  </g>
+  <text x="360" y="385" text-anchor="middle" font-family="Segoe UI,Microsoft YaHei,sans-serif" font-size="24" fill="#176b51">MinIO 原图仅在本地验证环境加载</text>
+  <text x="360" y="417" text-anchor="middle" font-family="Segoe UI,Microsoft YaHei,sans-serif" font-size="16" fill="#6e7c77">仓库不再分发厂商手册图片</text>
+</svg>

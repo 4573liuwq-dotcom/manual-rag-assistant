@@ -1,0 +1,37 @@
+{
+  "case_count": 32,
+  "variants": {
+    "dense": {
+      "success_count": 32,
+      "hit_at_3": 0.9375,
+      "recall_at_5": 1.0,
+      "mrr": 0.8995,
+      "avg_latency_ms": 531.55,
+      "p95_latency_ms": 608.44
+    },
+    "hybrid": {
+      "success_count": 32,
+      "hit_at_3": 0.9375,
+      "recall_at_5": 0.9688,
+      "mrr": 0.8516,
+      "avg_latency_ms": 535.82,
+      "p95_latency_ms": 612.65
+    },
+    "hybrid_hyde_rrf": {
+      "success_count": 32,
+      "hit_at_3": 0.9688,
+      "recall_at_5": 1.0,
+      "mrr": 0.8516,
+      "avg_latency_ms": 5311.76,
+      "p95_latency_ms": 6590.75
+    },
+    "hybrid_hyde_rrf_rerank": {
+      "success_count": 32,
+      "hit_at_3": 0.9062,
+      "recall_at_5": 1.0,
+      "mrr": 0.8969,
+      "avg_latency_ms": 26710.72,
+      "p95_latency_ms": 29814.94
+    }
+  }
+}

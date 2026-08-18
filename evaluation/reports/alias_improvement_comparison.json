@@ -1,0 +1,26 @@
+{
+  "dataset": "10条H3C LA2608手册人工标注问题",
+  "baseline": {
+    "item_name_accuracy": 0.1,
+    "hit_at_3": 0.1,
+    "recall_at_3": 0.1,
+    "mrr": 0.1,
+    "latency_avg_ms": 4623.773,
+    "note": "型号简称因0.6773相似度落入澄清区间，9条请求提前结束"
+  },
+  "after_unique_model_alias_normalization": {
+    "item_name_accuracy": 1.0,
+    "hit_at_3": 0.9,
+    "recall_at_3": 0.9,
+    "mrr": 0.9,
+    "latency_avg_ms": 22817.0488,
+    "latency_p95_ms": 33156.088,
+    "remaining_failure": "case_010 连通性验证正确切片未进入Rerank后Top3"
+  },
+  "limitations": [
+    "样本量仅10条，属于小规模人工标注初测",
+    "改进后请求进入完整RAG链路，因此耗时高于提前结束的基线",
+    "当前使用CPU运行BGE Reranker",
+    "百炼Web/MCP地址返回404，系统已降级为本地双路检索"
+  ]
+}

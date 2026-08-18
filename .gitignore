@@ -1,0 +1,27 @@
+.env
+knowledge/.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+logs/
+*.log
+
+# 本地模型、解析缓存和上传临时文件不进入Git
+models/
+knowledge/temp_data/
+knowledge/upload/temp_data/
+evaluation/work/
+
+# 官方手册体积较大且可能受再分发条款约束；仓库保留来源和实验清单
+evaluation/corpus/**/*.pdf
+*.pdf
+
+# 本地服务数据
+data/
+*.db

@@ -1,0 +1,5 @@
+{"case_id":"case_001","question":"H3C LA2608 如何进行首次配置？","expected_item_names":["H3C LA2608"],"expected_chunk_ids":[],"notes":"请从 Milvus/Attu 标注能够正确回答问题的真实 chunk_id"}
+{"case_id":"case_002","question":"H3C LA2608 如何恢复出厂设置？","expected_item_names":["H3C LA2608"],"expected_chunk_ids":[],"notes":"请补充真实 chunk_id"}
+{"case_id":"case_003","question":"H3C LA2608 的指示灯分别代表什么状态？","expected_item_names":["H3C LA2608"],"expected_chunk_ids":[],"notes":"请补充真实 chunk_id"}
+{"case_id":"case_004","question":"如何排查 H3C LA2608 无法接入网络的问题？","expected_item_names":["H3C LA2608"],"expected_chunk_ids":[],"notes":"请补充真实 chunk_id"}
+{"case_id":"case_005","question":"这个设备怎么重启？","expected_item_names":[],"expected_chunk_ids":[],"history":[{"role":"user","content":"我正在配置 H3C LA2608"}],"notes":"用于测试历史对话中的商品指代消解"}

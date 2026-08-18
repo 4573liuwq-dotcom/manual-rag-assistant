@@ -1,0 +1,16 @@
+{"case_id":"route_01","question":"MC-6RB77A 第一次用怎么充电？","expected_item_names":["Panasonic MC-6RB77A 智能吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_02","question":"6RB77A 报 U12 怎么办？","expected_item_names":["Panasonic MC-6RB77A 智能吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_03","question":"松下 RB77A 怎么连接手机？","expected_item_names":["Panasonic MC-6RB77A 智能吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_04","question":"MC-8D56C 的过滤网能水洗吗？","expected_item_names":["Panasonic MC-8D56C 充电式真空吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_05","question":"D56C 充了电还是用不了多久","expected_item_names":["Panasonic MC-8D56C 充电式真空吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_06","question":"松下 8D56C 的强劲模式能用几分钟？","expected_item_names":["Panasonic MC-8D56C 充电式真空吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_07","question":"MC-8R76C 怎么预约明天打扫？","expected_item_names":["松下 MC-8R76C 智能吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_08","question":"8R76C 的拖布可以湿用吗？","expected_item_names":["松下 MC-8R76C 智能吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_09","question":"松下 R76C 为什么回不了充电座？","expected_item_names":["松下 MC-8R76C 智能吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_10","question":"MC-CA781 自动停机一个小时是什么情况？","expected_item_names":["MC-CA781_MC-CA783 吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_11","question":"CA783 的毛刷不转了","expected_item_names":["MC-CA781_MC-CA783 吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_12","question":"松下 CA781 过滤网需要晾多久？","expected_item_names":["MC-CA781_MC-CA783 吸尘器"],"expected_action":"confirm"}
+{"case_id":"route_13","question":"这个吸尘器怎么倒垃圾？","expected_item_names":[],"expected_action":"clarify_or_reject"}
+{"case_id":"route_14","question":"今天天气怎么样？","expected_item_names":[],"expected_action":"clarify_or_reject"}
+{"case_id":"route_15","question":"戴森 V15 的滤芯怎么清洗？","expected_item_names":[],"expected_action":"clarify_or_reject"}
+{"case_id":"route_16","question":"MC-8D56C 和 MC-8R76C 分别怎么维护过滤网？","expected_item_names":["Panasonic MC-8D56C 充电式真空吸尘器","松下 MC-8R76C 智能吸尘器"],"expected_action":"confirm"}

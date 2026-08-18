@@ -1,0 +1,10 @@
+{"case_id":"case_001","question":"H3C LA2608 如何进行首次配置？","expected_item_names":["H3C LA2608 室内无线网关"],"expected_chunk_ids":["468264461977660649"],"notes":"配置LA2608完整步骤"}
+{"case_id":"case_002","question":"LA2608 需要通过什么网络连接无线控制器？","expected_item_names":["H3C LA2608 室内无线网关"],"expected_chunk_ids":["468264461977660647","468264461977660648"],"notes":"产品概述与互通方式"}
+{"case_id":"case_003","question":"LA2608 能和其他厂商的无线控制器互通吗？","expected_item_names":["H3C LA2608 室内无线网关"],"expected_chunk_ids":["468264461977660647"],"notes":"兼容性限制"}
+{"case_id":"case_004","question":"LA2608 如何配置拨号访问组的拨号控制列表？","expected_item_names":["H3C LA2608 室内无线网关"],"expected_chunk_ids":["468264461977660649"],"notes":"拨号访问组命令"}
+{"case_id":"case_005","question":"LA2608 的 DCC 拨号串应该怎么配置？","expected_item_names":["H3C LA2608 室内无线网关"],"expected_chunk_ids":["468264461977660649"],"notes":"DCC拨号配置"}
+{"case_id":"case_006","question":"LA2608 如何开启 DNS 解析并配置默认路由？","expected_item_names":["H3C LA2608 室内无线网关"],"expected_chunk_ids":["468264461977660649"],"notes":"DNS和静态路由"}
+{"case_id":"case_007","question":"LA2608 如何指定运营商无线控制器的 IP 地址？","expected_item_names":["H3C LA2608 室内无线网关"],"expected_chunk_ids":["468264461977660649"],"notes":"无线控制器地址"}
+{"case_id":"case_008","question":"运营商无线控制器上如何为 LA2608 创建业务 VLAN？","expected_item_names":["H3C LA2608 室内无线网关"],"expected_chunk_ids":["468264461977660652"],"notes":"业务VLAN配置"}
+{"case_id":"case_009","question":"无线控制器如何为 LA2608 配置 DHCP 地址池？","expected_item_names":["H3C LA2608 室内无线网关"],"expected_chunk_ids":["468264461977660652"],"notes":"DHCP配置"}
+{"case_id":"case_010","question":"怎样验证 LA2608 已经与无线控制器成功连接？","expected_item_names":["H3C LA2608 室内无线网关"],"expected_chunk_ids":["468264461977660652"],"notes":"display wlan ap和R/M状态"}

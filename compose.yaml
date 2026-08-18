@@ -1,0 +1,18 @@
+services:
+  app:
+    build: .
+    env_file:
+      - knowledge/.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: "${MODEL_DIR:-./models}"
+        target: /models
+        read_only: true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+# Milvus、Neo4j、MongoDB和MinIO可使用现有虚拟机服务。
+# 容器内连接宿主机时，请将.env中的127.0.0.1改为host.docker.internal。

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>智维手册 · 多模态知识助手</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="storage.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">智</span><div><b>智维手册</b><small>Manual Intelligence</small></div></div>
+    <div class="workspace"><span>当前知识库</span><b>松下吸尘器产品库</b><small>appliance_chunks_v2</small></div>
+    <nav>
+      <button class="nav-item active" data-view="query"><span>⌕</span>智能问答</button>
+      <button class="nav-item" data-view="documents"><span>▤</span>文档管理</button>
+      <button class="nav-item" data-view="storage"><span>▦</span>存储数据</button>
+      <button class="nav-item" data-view="evaluation"><span>⌁</span>评测中心</button>
+    </nav>
+    <div class="side-spacer"></div>
+    <div class="service-card">
+      <div class="service-title"><span class="pulse"></span><b>服务运行正常</b></div>
+      <div class="service-grid"><span>Milvus</span><i>在线</i><span>Neo4j</span><i>在线</i><span>MongoDB</span><i>在线</i><span>MinIO</span><i>在线</i></div>
+    </div>
+    <div class="profile"><span>LR</span><div><b>知识库管理员</b><small>本地演示环境</small></div></div>
+  </aside>
+
+  <main>
+    <header>
+      <div><p class="eyebrow">MULTIMODAL RAG WORKSPACE</p><h1 id="pageTitle">智能问答</h1></div>
+      <div class="header-actions"><span class="mode">● Dense 快速模式</span><span class="demo-tag">真实 Smoke 回放 · 2026-08-19</span></div>
+    </header>
+
+    <section class="view active" id="view-query">
+      <div class="query-layout">
+        <div class="chat-panel panel">
+          <div class="product-row"><span>已确认产品</span><b>Panasonic MC-6RB77A 智能吸尘器</b><em>置信匹配</em></div>
+          <div class="chat-scroll">
+            <div class="bubble user"><small>用户问题</small>MC-6RB77A 第一次使用前要充多久电？</div>
+            <div class="assistant-row"><div class="ai-avatar">AI</div><div class="bubble assistant"><small>智维手册</small><p>根据产品说明书，MC-6RB77A 首次使用前需要先充满电，完整充电时间约为 <strong>2 小时至 3.5 小时</strong>。首次未充电时设备可能无法启动。</p><a href="#source-1">[资料1]</a></div></div>
+          </div>
+          <div class="composer"><input value="MC-6RB77A 第一次使用前要充多久电？" aria-label="问题"><button>发送问题 ↗</button></div>
+          <div class="pipeline"><span>问题改写</span><i>→</i><span>型号确认</span><i>→</i><span>Dense 召回</span><i>→</i><span>证据生成</span></div>
+        </div>
+
+        <aside class="trace-panel panel">
+          <div class="panel-head"><div><small>QUERY TRACE</small><b>本次检索轨迹</b></div><span class="success">成功</span></div>
+          <div class="trace-item"><span>01</span><div><b>Query Rewrite</b><p>MC-6RB77A第一次使用前要充多久电？</p></div><em>1.56s</em></div>
+          <div class="trace-item"><span>02</span><div><b>产品型号确认</b><p>唯一型号Token匹配</p></div><em>通过</em></div>
+          <div class="trace-item"><span>03</span><div><b>Dense Retrieval</b><p>Top 10 · Cosine</p></div><em>0.53s</em></div>
+          <div class="trace-item"><span>04</span><div><b>Answer Generation</b><p>引用合法性已校验</p></div><em>完成</em></div>
+          <div class="trace-total"><span>首次冷启动端到端</span><b>8.95 s</b></div>
+        </aside>
+      </div>
+
+      <div class="evidence-title"><div><p class="eyebrow">GROUNDED EVIDENCE</p><h2>检索证据</h2></div><span>Top 1 命中人工标注 Chunk</span></div>
+      <div class="evidence-grid">
+        <article class="source-card panel" id="source-1"><div class="source-top"><span class="rank">资料 1</span><span class="score">相关度 0.720</span></div><h3>安全注意事项（续）</h3><p>您购买吸尘器时，电池并未充满，首次使用前请务必先充电，否则无法启动系统。<mark>充满电约需 2 小时～3.5 小时</mark>。</p><footer><span>Chunk 468264461977660756</span><b>MC-6RB77A.pdf</b></footer></article>
+        <article class="image-card panel"><div class="source-top"><span class="rank image-rank">多模态证据</span><span class="score">MinIO 资源</span></div><div class="image-preview"><img src="../../evaluation/work/panasonic_vacuums/MC-6RB77A/MC-6RB77A/auto/images/3f395b2218a5aee32b5348e831a01b31925f9064349d5587dacdc20528fad435.jpg" onerror="this.onerror=null;this.src='assets/minio-placeholder.svg'" alt="充电说明示意图"><span>视觉内容已生成语义描述并参与检索</span></div></article>
+        <article class="source-card muted panel"><div class="source-top"><span class="rank">资料 2</span><span class="score">相关度 0.672</span></div><h3>状态指示灯说明</h3><p>充电提示灯会呈呼吸灯变化；若未亮起，请重新将本体放置于充电座。</p><footer><span>Chunk 468264461977660757</span><b>MC-6RB77A.pdf</b></footer></article>
+      </div>
+    </section>
+
+    <section class="view" id="view-documents">
+      <div class="stats-row">
+        <div class="stat panel"><span>已入库文档</span><b>4</b><small>官方产品说明书</small></div>
+        <div class="stat panel"><span>文档总页数</span><b>88</b><small>MinerU解析完成</small></div>
+        <div class="stat panel"><span>知识切片</span><b>142</b><small>标题级语义切分</small></div>
+        <div class="stat panel accent"><span>有效图片</span><b>185</b><small>由508张过滤 · -63.6%</small></div>
+      </div>
+      <div class="document-layout">
+        <div class="panel document-table">
+          <div class="table-head"><div><p class="eyebrow">KNOWLEDGE DOCUMENTS</p><h2>产品说明书</h2></div><button class="primary">＋ 导入新文档</button></div>
+          <div class="table-row labels"><span>文件 / 产品型号</span><span>页数</span><span>Chunk</span><span>图片</span><span>状态</span></div>
+          <div class="table-row"><div class="file"><i>PDF</i><span><b>MC-6RB77A.pdf</b><small>Panasonic MC-6RB77A 智能吸尘器</small></span></div><span>26</span><span>44</span><span>55</span><em>● 已完成</em></div>
+          <div class="table-row"><div class="file"><i>PDF</i><span><b>MC-8D56C.pdf</b><small>Panasonic MC-8D56C 充电式真空吸尘器</small></span></div><span>20</span><span>34</span><span>31</span><em>● 已完成</em></div>
+          <div class="table-row"><div class="file"><i>PDF</i><span><b>MC-8R76C.pdf</b><small>松下 MC-8R76C 智能吸尘器</small></span></div><span>26</span><span>41</span><span>63</span><em>● 已完成</em></div>
+          <div class="table-row"><div class="file"><i>PDF</i><span><b>MC-CA781_MC-CA783.pdf</b><small>MC-CA781 / MC-CA783 吸尘器</small></span></div><span>16</span><span>23</span><span>36</span><em class="warn">● KG警告</em></div>
+        </div>
+        <aside class="panel pipeline-panel"><div class="panel-head"><div><small>IMPORT PIPELINE</small><b>入库工作流</b></div><span class="success">LangGraph</span></div>
+          <ol><li class="done"><span>1</span><div><b>PDF解析</b><small>MinerU → Markdown</small></div></li><li class="done"><span>2</span><div><b>图片处理</b><small>面积过滤 · VLM摘要 · MinIO</small></div></li><li class="done"><span>3</span><div><b>语义切分</b><small>标题层级 · 超长拆分 · 短段合并</small></div></li><li class="done"><span>4</span><div><b>型号识别</b><small>Qwen结构化抽取</small></div></li><li class="done"><span>5</span><div><b>向量入库</b><small>BGE-M3 · Dense / Sparse · Milvus</small></div></li><li class="warning"><span>6</span><div><b>知识图谱</b><small>1个切片JSON异常已隔离</small></div></li></ol>
+          <div class="pipeline-note"><b>容错策略</b><p>单个图谱切片失败不会回滚文本、图片和向量入库。</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="view" id="view-storage">
+      <div class="storage-hero panel"><div><p class="eyebrow">LIVE STORAGE SNAPSHOT · 2026-08-19</p><h2>Milvus 与 MinIO 入库证据</h2><p>下列结构和样例来自本地虚拟机中的真实集合查询；密钥与内网管理地址未展示。</p></div><span class="success">连接验证通过</span></div>
+      <div class="stats-row"><div class="stat panel"><span>Collection</span><b class="small-value">appliance_chunks_v2</b><small>产品说明书Chunk集合</small></div><div class="stat panel"><span>Dense维度</span><b>1024</b><small>BGE-M3 Dense Vector</small></div><div class="stat panel"><span>向量类型</span><b class="small-value">Dense + Sparse</b><small>语义与关键词混合召回</small></div><div class="stat accent panel"><span>对象存储</span><b class="small-value">knowledge-base-v2</b><small>MinIO Bucket</small></div></div>
+      <div class="storage-layout">
+        <div class="panel storage-table"><div class="panel-head"><div><small>MILVUS SAMPLE ROWS</small><b>向量集合数据</b></div><span>真实查询快照</span></div>
+          <div class="schema-chips"><span>chunk_id · INT64 PK</span><span>dense_vector · FLOAT_VECTOR[1024]</span><span>sparse_vector · SPARSE_FLOAT_VECTOR</span><span>content · VARCHAR</span><span>item_name · VARCHAR</span></div>
+          <div class="milvus-row"><span class="db-id">468264461977660738</span><div><b>灵动勒洛三角 边角无“屑”可击</b><p>让打扫变得轻松愉快；图片语义标题及MinIO地址已回写到Markdown。</p><small>Panasonic MC-6RB77A 智能吸尘器 · MC-6RB77A</small></div><em>已入库</em></div>
+          <div class="milvus-row"><span class="db-id">468264461977660739</span><div><b>Panasonic 智能吸尘器（家用型）</b><p>包含安全注意事项、充电、网络连接、维护保养与故障代码章节。</p><small>Panasonic MC-6RB77A 智能吸尘器 · MC-6RB77A</small></div><em>已入库</em></div>
+        </div>
+        <aside class="panel minio-card"><div class="panel-head"><div><small>MINIO OBJECT</small><b>原图资源</b></div><span class="success">HTTP可访问</span></div><div class="minio-preview"><img src="../../evaluation/work/panasonic_vacuums/MC-6RB77A/MC-6RB77A/auto/images/3f395b2218a5aee32b5348e831a01b31925f9064349d5587dacdc20528fad435.jpg" onerror="this.onerror=null;this.src='assets/minio-placeholder.svg'" alt="MinIO图片对象"></div><dl><dt>Bucket</dt><dd>knowledge-base-v2</dd><dt>Object</dt><dd>MC-6RB77A/...fad435.jpg</dd><dt>文档回写</dt><dd>![VLM语义描述](remote_url)</dd></dl><p class="snapshot-note">截图仅展示对象路径结构；GitHub仓库不提交访问密钥。</p></aside>
+      </div>
+    </section>
+
+    <section class="view" id="view-evaluation">
+      <div class="evaluation-hero panel"><div><p class="eyebrow">OFFLINE EVALUATION · 32 QUERIES</p><h2>检索消融实验</h2><p>固定型号人工集，用真实Milvus结果比较召回质量与延迟；指标不等同于生产准确率。</p></div><div class="experiment-badge"><span>默认策略</span><b>Dense</b><small>综合效果 / 延迟最优</small></div></div>
+      <div class="stats-row eval-stats"><div class="stat panel"><span>Dense Hit@3</span><b>93.75%</b><small>30 / 32题命中</small></div><div class="stat panel"><span>Dense MRR</span><b>0.8995</b><small>相关证据靠前</small></div><div class="stat panel"><span>平均检索耗时</span><b>0.53s</b><small>P95 0.61s</small></div><div class="stat panel accent"><span>HyDE+RRF增益</span><b>+3.13pp</b><small>代价：平均5.31s</small></div></div>
+      <div class="eval-layout">
+        <div class="panel chart-card"><div class="panel-head"><div><small>HIT@3 COMPARISON</small><b>各方案命中率</b></div><span>越高越好</span></div>
+          <div class="bar-row"><label>Dense</label><div><i style="width:93.75%"></i></div><b>93.75%</b></div>
+          <div class="bar-row"><label>Dense + Sparse</label><div><i style="width:93.75%"></i></div><b>93.75%</b></div>
+          <div class="bar-row best"><label>HyDE + RRF</label><div><i style="width:96.88%"></i></div><b>96.88%</b></div>
+          <div class="bar-row rerank"><label>+ Reranker</label><div><i style="width:90.62%"></i></div><b>90.62%</b></div>
+          <div class="latency-strip"><span><i></i>0.53s<br><small>Dense</small></span><span><i></i>0.54s<br><small>Hybrid</small></span><span><i></i>5.31s<br><small>HyDE+RRF</small></span><span><i></i>26.71s<br><small>CPU Reranker</small></span></div>
+        </div>
+        <div class="panel decision-card"><div class="panel-head"><div><small>ENGINEERING DECISION</small><b>为什么默认Dense？</b></div><span class="success">已落地</span></div><ul><li><b>效果足够：</b>Hit@3 93.75%，Recall@5 100%</li><li><b>延迟最低：</b>平均0.53秒，约为完整RRF链路的1/10</li><li><b>Reranker收益不稳：</b>MRR提升但Hit@3下降，CPU平均26.71秒</li><li><b>按需增强：</b>低置信复杂问题可切换完整模式</li></ul><div class="config-box"><span>QUERY_RETRIEVAL_MODE</span><b>dense</b></div></div>
+      </div>
+      <div class="panel result-table"><div class="table-row labels"><span>检索方案</span><span>Hit@3</span><span>Recall@5</span><span>MRR</span><span>平均耗时</span><span>P95</span></div><div class="table-row selected"><b>Dense 基线 · 默认</b><span>93.75%</span><span>100%</span><span>0.8995</span><span>0.53s</span><span>0.61s</span></div><div class="table-row"><b>Dense + Sparse</b><span>93.75%</span><span>96.88%</span><span>0.8516</span><span>0.54s</span><span>0.61s</span></div><div class="table-row"><b>Hybrid + HyDE + RRF</b><span>96.88%</span><span>100%</span><span>0.8516</span><span>5.31s</span><span>6.59s</span></div><div class="table-row"><b>+ CPU Reranker</b><span>90.62%</span><span>100%</span><span>0.8969</span><span>26.71s</span><span>29.81s</span></div></div>
+    </section>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{"case_id":"rb77_01","question":"MC-6RB77A 第一次使用前要充多久电？","item_name":"Panasonic MC-6RB77A 智能吸尘器","relevant_chunk_ids":["468264461977660756"],"category":"充电"}
+{"case_id":"rb77_02","question":"MC-6RB77A 的充电座应该放在什么位置？","item_name":"Panasonic MC-6RB77A 智能吸尘器","relevant_chunk_ids":["468264461977660755"],"category":"安装"}
+{"case_id":"rb77_03","question":"MC-6RB77A 怎样下载 APP 并连接网络？","item_name":"Panasonic MC-6RB77A 智能吸尘器","relevant_chunk_ids":["468264461977660758"],"category":"联网"}
+{"case_id":"rb77_04","question":"MC-6RB77A 能清扫毛长超过 7 毫米的地毯吗？","item_name":"Panasonic MC-6RB77A 智能吸尘器","relevant_chunk_ids":["468264461977660762"],"category":"使用限制"}
+{"case_id":"rb77_05","question":"MC-6RB77A 报 U12 故障代码怎么处理？","item_name":"Panasonic MC-6RB77A 智能吸尘器","relevant_chunk_ids":["468264461977660774"],"category":"故障"}
+{"case_id":"rb77_06","question":"MC-6RB77A 显示 H 开头的代码是什么意思？","item_name":"Panasonic MC-6RB77A 智能吸尘器","relevant_chunk_ids":["468264461977660775"],"category":"故障"}
+{"case_id":"rb77_07","question":"MC-6RB77A 的边刷刷毛弯曲了如何恢复？","item_name":"Panasonic MC-6RB77A 智能吸尘器","relevant_chunk_ids":["468264461977660770"],"category":"维护"}
+{"case_id":"rb77_08","question":"MC-6RB77A 的传感器和信号窗口怎么清洁？","item_name":"Panasonic MC-6RB77A 智能吸尘器","relevant_chunk_ids":["468264461977660769"],"category":"维护"}
+{"case_id":"d56_01","question":"MC-8D56C 完全充满电大约需要多长时间？","item_name":"Panasonic MC-8D56C 充电式真空吸尘器","relevant_chunk_ids":["468264461977661530"],"category":"充电"}
+{"case_id":"d56_02","question":"MC-8D56C 充电提示灯怎样表示已经充满？","item_name":"Panasonic MC-8D56C 充电式真空吸尘器","relevant_chunk_ids":["468264461977661531"],"category":"充电"}
+{"case_id":"d56_03","question":"MC-8D56C 自动、标准和强劲吸力模式有什么区别？","item_name":"Panasonic MC-8D56C 充电式真空吸尘器","relevant_chunk_ids":["468264461977661532"],"category":"操作"}
+{"case_id":"d56_04","question":"MC-8D56C 的二代两用吸嘴适合清理哪些位置？","item_name":"Panasonic MC-8D56C 充电式真空吸尘器","relevant_chunk_ids":["468264461977661533"],"category":"配件"}
+{"case_id":"d56_05","question":"MC-8D56C 怎样取出集尘盒并倒垃圾？","item_name":"Panasonic MC-8D56C 充电式真空吸尘器","relevant_chunk_ids":["468264461977661534"],"category":"维护"}
+{"case_id":"d56_06","question":"MC-8D56C 的过滤网水洗后需要晾多久？","item_name":"Panasonic MC-8D56C 充电式真空吸尘器","relevant_chunk_ids":["468264461977661536"],"category":"维护"}
+{"case_id":"d56_07","question":"MC-8D56C 充电后运转时间仍然很短怎么排查？","item_name":"Panasonic MC-8D56C 充电式真空吸尘器","relevant_chunk_ids":["468264461977661539"],"category":"故障"}
+{"case_id":"d56_08","question":"MC-8D56C 标准模式能连续使用多久？","item_name":"Panasonic MC-8D56C 充电式真空吸尘器","relevant_chunk_ids":["468264461977661543"],"category":"规格"}
+{"case_id":"r76_01","question":"MC-8R76C 的遥控器应该怎样对准机器？","item_name":"松下 MC-8R76C 智能吸尘器","relevant_chunk_ids":["468264461977661954"],"category":"遥控"}
+{"case_id":"r76_02","question":"MC-8R76C 怎么设置每周预约清扫？","item_name":"松下 MC-8R76C 智能吸尘器","relevant_chunk_ids":["468264461977661955"],"category":"预约"}
+{"case_id":"r76_03","question":"MC-8R76C 哪些情况下预约打扫不会开始？","item_name":"松下 MC-8R76C 智能吸尘器","relevant_chunk_ids":["468264461977661956"],"category":"预约"}
+{"case_id":"r76_04","question":"MC-8R76C 的拖布能湿用吗？","item_name":"松下 MC-8R76C 智能吸尘器","relevant_chunk_ids":["468264461977661953"],"category":"拖地"}
+{"case_id":"r76_05","question":"MC-8R76C 适合跨越多高的台阶？","item_name":"松下 MC-8R76C 智能吸尘器","relevant_chunk_ids":["468264461977661945"],"category":"使用限制"}
+{"case_id":"r76_06","question":"MC-8R76C 无法充电且状态灯不呼吸怎么排查？","item_name":"松下 MC-8R76C 智能吸尘器","relevant_chunk_ids":["468264461977661964"],"category":"故障"}
+{"case_id":"r76_07","question":"MC-8R76C 碰撞障碍物比以前多是什么原因？","item_name":"松下 MC-8R76C 智能吸尘器","relevant_chunk_ids":["468264461977661963"],"category":"故障"}
+{"case_id":"r76_08","question":"MC-8R76C 的边刷缠了头发应该怎样维护？","item_name":"松下 MC-8R76C 智能吸尘器","relevant_chunk_ids":["468264461977661961"],"category":"维护"}
+{"case_id":"ca78_01","question":"MC-CA781 吸尘器为什么会自动停机约 60 分钟？","item_name":"MC-CA781_MC-CA783 吸尘器","relevant_chunk_ids":["468264461977662629"],"category":"保护"}
+{"case_id":"ca78_02","question":"MC-CA783 的子吸嘴如何拆卸和安装？","item_name":"MC-CA781_MC-CA783 吸尘器","relevant_chunk_ids":["468264461977662631"],"category":"配件"}
+{"case_id":"ca78_03","question":"MC-CA781 垃圾没满但清理提示灯亮是什么原因？","item_name":"MC-CA781_MC-CA783 吸尘器","relevant_chunk_ids":["468264461977662632"],"category":"故障"}
+{"case_id":"ca78_04","question":"MC-CA783 怎样清理格状过滤网和褶状过滤网？","item_name":"MC-CA781_MC-CA783 吸尘器","relevant_chunk_ids":["468264461977662633"],"category":"维护"}
+{"case_id":"ca78_05","question":"MC-CA783 的旋转毛刷如何拆下清洁？","item_name":"MC-CA781_MC-CA783 吸尘器","relevant_chunk_ids":["468264461977662635"],"category":"维护"}
+{"case_id":"ca78_06","question":"MC-CA781 地面吸嘴水洗后怎样甩干？","item_name":"MC-CA781_MC-CA783 吸尘器","relevant_chunk_ids":["468264461977662638"],"category":"维护"}
+{"case_id":"ca78_07","question":"MC-CA781 的褶状过滤网清洗后要干燥多久？","item_name":"MC-CA781_MC-CA783 吸尘器","relevant_chunk_ids":["468264461977662640"],"category":"维护"}
+{"case_id":"ca78_08","question":"MC-CA783 旋转毛刷不转应该检查什么？","item_name":"MC-CA781_MC-CA783 吸尘器","relevant_chunk_ids":["468264461977662643"],"category":"故障"}

@@ -1,0 +1,14 @@
+{
+  "total_cases": 10,
+  "successful_cases": 10,
+  "error_cases": 0,
+  "success_rate": 1.0,
+  "evaluated_retrieval_cases": 10,
+  "hit@3": 0.1,
+  "recall@3": 0.1,
+  "mrr": 0.1,
+  "evaluated_item_cases": 10,
+  "item_name_accuracy": 0.1,
+  "latency_avg_ms": 4623.773,
+  "latency_p95_ms": 36680.925
+}

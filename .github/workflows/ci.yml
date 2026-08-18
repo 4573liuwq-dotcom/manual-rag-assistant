@@ -1,0 +1,21 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  offline-evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify committed datasets and reports
+        run: python evaluation/verify_offline_artifacts.py
+      - name: Reject committed environment secrets
+        shell: bash
+        run: |
+          test ! -f .env
+          test ! -f knowledge/.env
