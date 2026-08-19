@@ -25,3 +25,5 @@ evaluation/corpus/**/*.pdf
 # 本地服务数据
 data/
 *.db
+docs/demos/.demo_frames/
+docs/demos/qa/
